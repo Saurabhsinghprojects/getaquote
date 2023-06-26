@@ -1,5 +1,6 @@
-@font-face {
+/* @font-face {
     font-family: 'sf_pro_displaylight';
+
     src: url('../fonts/sf-pro-display-light-webfont.eot');
     src: url('../fonts/sf-pro-display-light-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/sf-pro-display-light-webfont.woff2') format('woff2'),
@@ -12,6 +13,7 @@
 
 @font-face {
     font-family: 'sf_pro_displaymedium';
+
     src: url('../fonts/sf-pro-display-medium-webfont.eot');
     src: url('../fonts/sf-pro-display-medium-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/sf-pro-display-medium-webfont.woff2') format('woff2'),
@@ -20,7 +22,7 @@
     url('../fonts/sf-pro-display-medium-webfont.svg#sf_pro_displaymedium') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: 'sf_pro_displayregular';
@@ -33,7 +35,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/* 
 @font-face {
     font-family: 'sf_pro_displaysemibold';
     src: url('../fonts/sf-pro-display-semibold-webfont.eot');
@@ -47,7 +49,7 @@
 }
 
 @font-face {
-    font-family: 'sf_pro_displaybold';
+   font-family: 'sf_pro_displaybold';
     src: url('../fonts/sf-pro-display-bold-webfont.eot');
     src: url('../fonts/sf-pro-display-bold-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/sf-pro-display-bold-webfont.woff2') format('woff2'),
@@ -56,7 +58,7 @@
     url('../fonts/sf-pro-display-bold-webfont.svg#sf_pro_displaybold') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 
 
@@ -241,7 +243,8 @@ header:before,
     padding: 24px 0 0 0;
     font-size: 16px;
     color: #585761;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     position: relative;
     cursor: pointer;
     text-transform: lowercase;
@@ -278,7 +281,8 @@ header:before,
 
 .getafreequote_btn a,
 .getafreequote_btn a:hover {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     background: #ff9600;
     font-size: 25px;
     color: #fff;
@@ -344,7 +348,8 @@ header:before,
 }
 
 .perceptive_video small {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 30px;
     line-height: 1px;
     color: #fff;
@@ -354,11 +359,13 @@ header:before,
 }
 
 .perceptive_video h1 {
- font-family: 'sf_pro_displaysemibold';    font-size: 47px;    line-height: 40px;    color: #fff;    margin: 0;    padding: 0;    text-align: left;
+ font-family: 'sf_pro_displayregular';
+font-weight: bold !important;    font-size: 47px;    line-height: 40px;    color: #fff;    margin: 0;    padding: 0;    text-align: left;
 }
 
 .perceptive_video h3 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 38px;
     line-height: 38px;
     color: #fff;
@@ -368,7 +375,8 @@ header:before,
 
 
 .perceptive_title h2 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 40px;
     line-height: 50px;
     color: #111;
@@ -377,7 +385,8 @@ header:before,
 }
 
 .perceptive_title h4 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 40px;
     line-height: 50px;
     color: #111;
@@ -386,7 +395,8 @@ header:before,
 }
 
 .perceptive_title h5 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 32px;
     line-height: 32px;
     color: #111;
@@ -394,7 +404,8 @@ header:before,
 }
 
 .perceptive_title h6 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 25px;
     line-height: 32px;
     color: #000;
@@ -413,7 +424,8 @@ header:before,
 
 .perceptive_left p,
 .perceptive_left ul li {
-    font-family: 'sf_pro_displaylight';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 20px;
     line-height: 32px;
     color: #111;
@@ -434,28 +446,32 @@ header:before,
 }
 
 .perceptive_offices h2 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 28px;
     line-height: 40px;
     color: #111;
 }
 
 .perceptive_offices h4 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 28px;
     line-height: 40px;
     color: #111;
 }
 
 .offices_list h5 {
-    font-family: 'sf_pro_displaybold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 22px;
     line-height: 30px;
     color: #111;
 }
 
 .offices_list p {
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 15px;
     line-height: 28px;
     color: #111;
@@ -482,7 +498,8 @@ header:before,
 .requestaquote_form h3 {
     font-size: 30px;
     line-height: 34px;
-    font-family: 'sf_pro_displaybold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -498,14 +515,16 @@ header:before,
 .requestaquote_form .form-group label {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 15px;
 }
 
 .getresponse_btn,
 .getresponse_btn:hover,
 .getresponse_btn:focus {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     background: #ff9600;
     font-size: 20px;
     color: #fff;
@@ -539,7 +558,8 @@ header:before,
 }
 
 .testimonials_sec h4 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 30px;
     line-height: 40px;
     color: #111;
@@ -547,14 +567,16 @@ header:before,
 }
 
 .testimonials_sec .swiper-slide p {
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 24px;
     line-height: 30px;
     color: #333;
 }
 
 .cioreview_sec p {
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 25px;
     line-height: 35px;
     color: #333;
@@ -563,7 +585,8 @@ header:before,
 
 
 .testimonials_sec .swiper-slide h5 {
-    font-family: 'sf_pro_displaylight';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 24px;
     line-height: 40px;
     color: #111;
@@ -623,7 +646,8 @@ header:before,
 }
 
 .thankyou_text h2 {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 40px;
     line-height: 50px;
     color: #111;
@@ -632,7 +656,8 @@ header:before,
 }
 
 .thankyou_text h3 {
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 30px;
     line-height: 40px;
     color: #111;
@@ -652,7 +677,8 @@ footer p {
     font-size: 20px;
     padding: 15px 0;
     margin: 0;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
 }
 
 footer p a,
@@ -708,7 +734,8 @@ footer p a:hover {
 .getaquote_from h3 {
     font-size: 35px;
     line-height: 35px;
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     color: #111;
     text-transform: none;
     text-align: center;
@@ -719,7 +746,8 @@ footer p a:hover {
 .getaquote_from h4 {
     font-size: 25px;
     line-height: 35px;
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     color: #111;
     text-transform: none;
     text-align: center;
@@ -731,7 +759,8 @@ footer p a:hover {
     font-size: 15px;
     display: block;
     text-transform: none;
-    /*font-family: 'sf_pro_displaymedium';*/
+    /*font-family: 'sf_pro_displayregular';
+*/
 }
 
 .getaquote_from ul {
@@ -792,7 +821,8 @@ footer p a:hover {
 .getquote_submitbtn:hover,
 .getquote_submitbtn:focus,
 .getquote_submitbtn:active:focus {
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     background: #ff9600;
     font-size: 20px;
     color: #fff !important;
@@ -944,7 +974,8 @@ footer p a:hover {
 }
 
 .mob_perceptive_left ul li {
-    font-family: 'sf_pro_displaylight';
+    font-family: 'sf_pro_displayregular';
+
     color: #111;
     list-style: inside;
     font-size: 18px;
@@ -992,7 +1023,8 @@ footer p a:hover {
 .mob_requestaquote_form .form-group label {
     color: #111;
     text-transform: uppercase;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 15px;
 }
 
@@ -1164,7 +1196,8 @@ footer p a:hover {
 
 
 .section_title {
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 35px;
     line-height: 45px;
     color: #111;
@@ -1177,7 +1210,8 @@ footer p a:hover {
 .section_title span {
     text-transform: none;
     display: block;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 25px;
 }
 
@@ -1209,7 +1243,8 @@ footer p a:hover {
     padding: 0;
     font-size:22px;
     color: #111;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     display:table-row; 
     vertical-align:middle;
 }
@@ -1221,7 +1256,8 @@ footer p a:hover {
     color: #333;
     text-align: center;
     font-style: normal;
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
     font-size: 25px;
     width: 54px;
     height: 54px;
@@ -1241,7 +1277,8 @@ footer p a:hover {
     font-size: 20px;
     line-height:32px;
     color: #333;
-    font-family: 'sf_pro_displaylight';
+    font-family: 'sf_pro_displayregular';
+
 }
 
 
@@ -1297,7 +1334,8 @@ footer p a:hover {
     text-decoration: none;
     color: #333;
     font-style: normal;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     font-size: 30px;
     line-height: 34px;
     text-decoration: none;
@@ -1308,7 +1346,8 @@ footer p a:hover {
     font-size: 20px;
     line-height: 32px;
     color: #333;
-    font-family: 'sf_pro_displaylight';
+    font-family: 'sf_pro_displayregular';
+
 }
 
 .ourwork_list .ourwork_listcont .sendtoemail_btn {
@@ -1319,7 +1358,8 @@ footer p a:hover {
     text-decoration: none;
     color: #fff;
     display: block;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     margin: 0 auto;
     transition: all ease 0.5s;
     -webkit-transition: all ease 0.5s;
@@ -1365,7 +1405,8 @@ footer p a:hover {
     font-weight: normal;
     font-size: 25px;
     color: #333;
-    font-family: 'sf_pro_displaymedium';
+    font-family: 'sf_pro_displayregular';
+
     display: table-cell;
     vertical-align: middle;
 }
@@ -1383,7 +1424,8 @@ footer p a:hover {
     line-height:32px;
     color: #333;
     font-weight: normal;
-    font-family: 'sf_pro_displaylight';
+    font-family: 'sf_pro_displayregular';
+
 }
 
 
@@ -1425,7 +1467,8 @@ footer p a:hover {
     text-align: center;
     font-size: 24px;
     color: #000;
-    font-family: 'sf_pro_displaysemibold';
+    font-family: 'sf_pro_displayregular';
+font-weight: bold !important;
 }
 
 .getfreeconsultation_model_list h6 {

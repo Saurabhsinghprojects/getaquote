@@ -454,9 +454,9 @@ header:after, header:before, .logo_nav_info:after {
 	text-align: center;
 	margin: 15px 0;
 }
-.secured_sec img {
+/* .secured_sec img {
 	padding: 0 10px;
-}
+} */
 .tableau_img {
 	text-align: center;
 	margin-top: 20px;
@@ -1379,4 +1379,22 @@ footer p a, footer p a:hover {
 }
 .extra_box p{
 	margin: 0px !important;
+}
+
+/* navbar sticky */
+.home_header{
+	top: 0;
+	position: sticky;
+	z-index: 1000;
+	background-color: white;
+}
+
+.privacypolicy_txt img{
+	width: 16px;
+    height: 16px;
+}
+
+.form-group img{
+	width: 16px;
+    height: 16px;
 }

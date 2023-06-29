@@ -371,14 +371,16 @@
                 
                 let startValue1 = 0;
                 let endValue1 = 15;
-                let startValue2 = 100;
+                let startValue2 = 50;
                 let endValue2 = 10;
                 let startValue3 = 0;
                 let endValue3 = 350;
-                let duration = 4000;
-                animateValue(numberElements[0], startValue1, endValue1, duration);
-                animateValue(numberElements[1], startValue2, endValue2, duration);
-                animateValue(numberElements[2], startValue3, endValue3, duration);
+                let duration = 2000;
+                setTimeout(function() {
+                    animateValue(numberElements[0], startValue1, endValue1, duration);
+                    animateValue(numberElements[1], startValue2, endValue2, duration);
+                    animateValue(numberElements[2], startValue3, endValue3, duration);
+                }, 2000);
             </script>
             <script type="text/javascript">
                 jQuery(document).ready(function ($) {

@@ -51,23 +51,26 @@
         gtag('config', 'UA-22731857-1');
     </script>
     <style>
-        body{
-            background: url(images/thankyou_img.webp);
+        body {
+            background: url(images/quotebg.webp);
             background-repeat: no-repeat;
             background-size: cover;
             background-position-x: 1px;
-            
+
         }
+
         body::after {
             z-index: -1;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 255, 0.5); /* Transparent blue layer */
-      }
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.5);
+            /* Transparent blue layer */
+        }
+
         .container {
             display: flex;
             align-items: center;
@@ -79,7 +82,7 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             border-radius: 12px;
             position: absolute;
-            top: 220%;
+            top: 195%;
             left: 20%;
         }
 
@@ -89,33 +92,139 @@
 
         .image-section {
             flex: 0.92;
-           width: 450px;
+            width: 450px;
             position: relative;
             overflow: hidden;
         }
 
-        .image-section::after {
+        .image-section {
             content: "";
             display: block;
-            padding-bottom: 100%;
+            /* padding-bottom: 100%; */
             /* Adjust this value for the desired aspect ratio */
-           
+
         }
 
         .image-section img {
-          
-            position: absolute;
-            top: 0;
-            left: 0;
-            object-position: -43px;
-            width: 100%;
-            height: 100%;
-            border-bottom-left-radius: 12px;
-            border-top-left-radius: 12px;
+
+            position: relative;
+            top: 11%;
+            left: 25%;
+            object-position: 0px -13px;
+            width: 48%;
+            height: 87%;
             object-fit: cover;
-            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-            /* border-radius: 50%; */
-            /* Add any desired border radius or shape */
+            /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+            border-radius: 50%;
+
+        }
+
+
+        .imgcontainer {
+            display: flex;
+            flex-direction: column;
+            font-family: 'sf_pro_displayregular' !important;
+            font-size: 16px !important;
+            color: #111 !important;
+        }
+
+        .imgcontsection {
+            height: 100px;
+            /* border: 1px solid black;  */
+            /* margin-bottom: 10px;  */
+        }
+
+        .number {
+            font-size: 24px;
+            font-weight: bold;
+            animation: countUp 2s ease-in-out;
+        }
+
+        /* Keyframes for the animation */
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .numbersdiv {
+            display: inline-block;
+            margin: 0 17px;
+            text-align: center;
+        }
+
+        .quote {
+            position: relative;
+            margin: 0 20px;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #72b0db;
+        }
+
+        .quote:before {
+            content: "\201C";
+            /* Left double quotation mark */
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            font-size: 40px;
+            color: #72b0db;
+        }
+
+        .quote p {
+            margin: 0;
+        }
+
+        .getaquote_from input[type=password],
+        .getaquote_from input[type=tel],
+        .getaquote_from input[type=text],
+        .getaquote_from input[type=email],
+        .getaquote_from textarea {
+            margin-bottom: 0px !important;
+        }
+
+        .scrolling-icons {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .scrolling-icons ul {
+            list-style: none;
+            white-space: nowrap;
+            padding: 0;
+            margin: 0;
+            animation: marquee 20s linear infinite;
+        }
+
+        .scrolling-icons ul li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .scrolling-icons ul li img {
+            height: 50px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .compLogo{
+            height: 100px !important;
+            width: 150px;
+            margin: 0 35px;
         }
     </style>
 </head>
@@ -133,7 +242,39 @@
         </header>
         <div class="container" style="width: 930px !important; padding-left:0px !important; height: 450px !important;">
             <div class="image-section" style="height: 450px !important;">
-                <img src="images/thankyou_img.webp" alt="Professional Image">
+                <div class="imgcontainer">
+                    <div class="imgcontsection" style="height: 225px !important;">
+                        <img src="images/Chaitanya-Sagar.webp" alt="Professional Image">
+                    </div>
+                    <div class="imgcontsection" style="height: 25px !important;  margin: 0 auto;">
+                        CEO & Founder
+                    </div>
+                    <div class="imgcontsection" style="height: 25px !important;  margin: 0 auto;">
+                        Perceptive Analytics
+                    </div>
+                    <div class="imgcontsection quote" style="height: 100px !important;text-align: center;">
+                        We live by a 5-second principle, which is this: in a matter of 5 seconds, our clients must be
+                        able to make business sense of our data visualizations.
+                    </div>
+                    <div class="imgcontsection" style="height: 75px !important;">
+                        <div id="counter">
+                            <div class="numbersdiv">
+                                <div><span class="number">0 </span><span>+</span></div>
+                                <div>Clients</div>
+                            </div>
+                            <div class="numbersdiv">
+                                <div><span class="number">0</span><span>+ yrs</span></div>
+                                <div>Experience</div>
+                            </div>
+                            <div class="numbersdiv">
+                                <div> <span>Top</span><span class="number">0</span></div>
+                                <div>Emerging Analytics Company</div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="form-section">
                 <div class="getaquote_sec">
@@ -162,39 +303,44 @@
                                         <li>
                                             <input id="first_name" maxlength="40" name="first_name" size="20"
                                                 type="text" placeholder="Name" />
+
+                                            <input type="text" name="phone" value="" class="inputbox"
+                                                style="    margin-top: 25px;" placeholder="Phone" />
+                                            <!--ReCaptcha-->
+                                            <div class="g-recaptcha" style="transform: scale3d(0.6, 0.8, 0.1);
+                                             /* width: 70px !important; */
+                                             transform-origin: 0 0;height: 64px;margin-top: 25px;"
+                                                data-sitekey="6Ley8hMUAAAAAFiRi8r6RcremIpmAlpNn9wQjFDi"></div>
+                                            <div id="capthca_response"></div>
+                                            <span class="privacypolicy_txt"
+                                                style="display: inline-block; margin-top: 28px !important;"><img
+                                                    src="images/lock.gif" width="10px" height="11px"
+                                                    alt="Privacy Policy: We hate spam; respect your privacy. " />
+                                                Privacy Policy: We hate spam; respect your privacy. </span>
+
+                                        </li>
+                                        <li style="padding: 0 8px;">
                                             <input name="email" value="" class="inputbox" maxlength="40" type="text"
                                                 required="" placeholder="Work email*"
                                                 pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
                                                 title="example@gmail.com">
-                                            <input type="text" name="phone" value="" class="inputbox"
-                                                placeholder="Phone" />
-                                            <span class="privacypolicy_txt"><img src="images/lock.gif" width="10px"
-                                                    height="11px"
-                                                    alt="Privacy Policy: We hate spam; respect your privacy. " />
-                                                Privacy Policy: We hate spam; respect your privacy. </span>
                                             <div class="secured_sec">
                                                 <img src="images/secured_sec2.webp"
                                                     alt="Tableau Consultants, Tableau consulting">
 
                                             </div>
-                                        </li>
-                                        <li style="padding: 0 8px;">
                                             <label for="aboutproject">Tell us about your needs</label>
                                             <textarea name="description" class="inputbox"></textarea>
-                                            <!--ReCaptcha-->
-                                            <div class="g-recaptcha" style="transform: scale(0.73);
-                                            /* width: 70px !important; */
-                                            transform-origin: 0 0;height: 64px;"
-                                                data-sitekey="6Ley8hMUAAAAAFiRi8r6RcremIpmAlpNn9wQjFDi"></div>
-                                            <div id="capthca_response"></div>
-                                            <div class="getquotecode_wp">
-                                                <input class="btn-default column getquote_submitbtn" style="padding: 14px 0px !important;font-size: 18px !important;" type="submit"
-                                                    name="submit" value="Get a Response Today" />
-                                            </div>
+
 
 
                                         </li>
                                     </ul>
+                                    <div class="getquotecode_wp">
+                                        <input class="btn-default column getquote_submitbtn"
+                                            style="padding: 14px 0px !important;font-size: 18px !important; margin: 10px 0px !important; width: 105% !important;"
+                                            type="submit" name="submit" value="Get a Response Today" />
+                                    </div>
                                 </form>
                             </div>
                             <!-- form ends here -->
@@ -204,37 +350,82 @@
 
             </div>
 
-        </div>
-
-        <script type="text/javascript">
-            jQuery(document).ready(function ($) {
-                // Parse the URL
-                function getParameterByName(name) {
-                    name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
-                    var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
-                        results = regex.exec(location.search);
-                    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+            <script>
+                // JavaScript to animate the numbers
+                function animateValue(element, start, end, duration) {
+                    let range = end - start;
+                    let current = start;
+                    let increment = end > start ? 1 : -1;
+                    let stepTime = Math.abs(Math.floor(duration / range));
+                    let timer = setInterval(function () {
+                        current += increment;
+                        element.innerHTML = current;
+                        if (current == end) {
+                            clearInterval(timer);
+                        }
+                    }, stepTime);
                 }
 
-                // UTM TRACKING
-                // Get the URL parameters variable by UTM names
-                var utm_campaign = getParameterByName('utm_campaign');
-                var utm_adgroup = getParameterByName('utm_adgroup');
-                var utm_term = getParameterByName('utm_term');
-                var device = getParameterByName('device');
-                var placement = getParameterByName('placement');
-                var adposition = getParameterByName('adposition');
+                // Usage example
+                let numberElements = document.getElementsByClassName('number');
+                let startValue1 = 0;
+                let endValue1 = 350;
+                let startValue2 = 0;
+                let endValue2 = 100;
+                let startValue3 = 100;
+                let endValue3 = 10;
+                let duration = 2000;
+
+                animateValue(numberElements[0], startValue1, endValue1, duration);
+                animateValue(numberElements[1], startValue2, endValue2, duration);
+                animateValue(numberElements[2], startValue3, endValue3, duration);
+            </script>
+            <script type="text/javascript">
+                jQuery(document).ready(function ($) {
+                    // Parse the URL
+                    function getParameterByName(name) {
+                        name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+                        var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
+                            results = regex.exec(location.search);
+                        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+                    }
+
+                    // UTM TRACKING
+                    // Get the URL parameters variable by UTM names
+                    var utm_campaign = getParameterByName('utm_campaign');
+                    var utm_adgroup = getParameterByName('utm_adgroup');
+                    var utm_term = getParameterByName('utm_term');
+                    var device = getParameterByName('device');
+                    var placement = getParameterByName('placement');
+                    var adposition = getParameterByName('adposition');
 
 
-                $('#utm_campaign__c').val(utm_campaign);
-                $('#utm_adgroup__c').val(utm_adgroup);
-                $('#utm_term__c').val(utm_term);
-                $('#device__c').val(device);
-                $('#placement__c').val(placement);
-                $('#adposition__c').val(adposition);
-            });
+                    $('#utm_campaign__c').val(utm_campaign);
+                    $('#utm_adgroup__c').val(utm_adgroup);
+                    $('#utm_term__c').val(utm_term);
+                    $('#device__c').val(device);
+                    $('#placement__c').val(placement);
+                    $('#adposition__c').val(adposition);
+                });
 
-        </script>
+            </script>
+        </div>
+    </div>
+    <div class="scrolling-icons" style="position:absolute;bottom: -30px;">
+        <ul>
+          <li><img class="compLogo" src="images/quote/1.webp" alt="Company 1"></li>
+          <li><img class="compLogo" style="height: 200px !important; width: 220px !important;" src="images/quote/2.webp" alt="Company 2"></li>
+          <li><img class="compLogo" style="height: 80px !important;" src="images/quote/3.webp" alt="Company 3"></li>
+          <li><img class="compLogo" style="width: 80px !important;" src="images/quote/4.webp" alt="Company 4"></li>
+          <li><img class="compLogo" style="height: 80px !important; width: 120px !important;" src="images/quote/5.webp" alt="Company 5"></li>
+          <li><img class="compLogo" src="images/quote/6.webp" alt="Company 6"></li>
+          <li><img class="compLogo" src="images/quote/7.webp" alt="Company 7"></li>
+          <li><img class="compLogo" src="images/quote/8.webp" alt="Company 8"></li>
+          <li><img class="compLogo" style="height: 200px !important; width: 200px !important; padding-top: 10px !important;" src="images/quote/9.webp" alt="Company 9"></li>
+          <!-- Add more company logos here -->
+        </ul>
+      </div>
+    </div>
 </body>
 
 </html>

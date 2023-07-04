@@ -636,7 +636,7 @@ footer p a, footer p a:hover {
 	height: 50px;
 	background-color: #fff;
 	box-shadow: none;
-	border-bottom: 1px solid #111 !important;
+	border: 1px solid #111 !important;
 	border: 0;
 	border-radius: 0;
 	-webkit-border-radius: 0;

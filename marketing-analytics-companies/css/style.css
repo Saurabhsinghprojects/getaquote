@@ -1661,3 +1661,11 @@ font-weight: bold !important;
 
 
 
+.privacypolicy_txt img {
+    width: 16px;
+    height: 16px;
+}
+.form-group span img {
+    width: 16px;
+    height: 16px;
+}

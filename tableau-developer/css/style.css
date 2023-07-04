@@ -1380,3 +1380,12 @@ footer p a, footer p a:hover {
 .extra_box p{
 	margin: 0px !important;
 }
+
+.privacypolicy_txt img {
+    width: 16px;
+    height: 16px;
+}
+.form-group span img {
+    width: 16px;
+    height: 16px;
+}

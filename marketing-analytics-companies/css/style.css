@@ -1669,3 +1669,9 @@ font-weight: bold !important;
     width: 16px;
     height: 16px;
 }
+.deskHead {
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    background-color: white;
+}

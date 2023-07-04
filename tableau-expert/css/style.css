@@ -1394,3 +1394,10 @@ footer p a, footer p a:hover {
 	left: 50%;
     transform: translateX(-50%);
 }
+
+.deskHead {
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    background-color: white;
+}

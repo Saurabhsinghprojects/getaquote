@@ -1378,9 +1378,7 @@ footer p a, footer p a:hover {
 /* navbar sticky */
 .home_header{
 	top: 0;
-	position: sticky;
-	z-index: 1000;
-	background-color: white;
+	
 }
 
 .privacypolicy_txt img{
@@ -1403,4 +1401,11 @@ footer p a, footer p a:hover {
 }
 .formSec{
 	display: inline-block !important;
+}
+
+.deskHead{
+	top: 0;
+	position: sticky;
+	z-index: 1000;
+	background-color: white;
 }

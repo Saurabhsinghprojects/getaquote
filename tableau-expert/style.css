@@ -553,6 +553,11 @@ img,iframe,video{
 
 }
 
+.footermob{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 
 

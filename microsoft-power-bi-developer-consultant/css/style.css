@@ -664,7 +664,8 @@ footer p a, footer p a:hover {
 	padding: 6px 12px;
 }
 .getaquote_from .secured_sec img {
-	max-width: 80%;
+	max-width: 40%;
+    margin-left: 15px;
 }
 .getquotecode_wp {
 	margin-top: 20px;

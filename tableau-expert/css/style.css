@@ -1389,3 +1389,8 @@ footer p a, footer p a:hover {
     width: 16px;
     height: 16px;
 }
+
+.footermob{
+	left: 50%;
+    transform: translateX(-50%);
+}

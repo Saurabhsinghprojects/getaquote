@@ -455,7 +455,7 @@ header:after, header:before, .logo_nav_info:after {
 	margin: 15px 0;
 }
 .secured_sec img {
-	padding: 0 10px;
+	padding: -1px 10px;
 }
 .tableau_img {
 	text-align: center;
